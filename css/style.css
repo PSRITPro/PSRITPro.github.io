@@ -1,85 +1,50 @@
-/* Reset some default styles */
+/* General resets and body styling */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styling for the body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 /* Header styling */
 header {
-    background-color: #007bff;
-    color: white;
+    background: #005a9e; /* Dark blue */
+    color: #fff;
     padding: 20px;
     text-align: center;
+    border-bottom: 4px solid #004080; /* Darker blue */
 }
 
 header h1 {
-    margin: 0;
-}
-
-/* Container for the layout */
-.container {
-    display: flex;
-    flex: 1;
-    margin: 20px;
-}
-
-/* Sidebar styling */
-.sidebar {
-    width: 250px;
-    background: #007bff;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 20px;
-}
-
-.sidebar h2 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-
-/* Main content styling */
-.content {
-    flex: 1;
-    margin-left: 20px;
+header p {
+    font-size: 1.2em;
 }
 
 /* Section styling */
 section {
-    background: #fff;
-    margin-bottom: 20px;
+    background: #ffffff;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 900px;
 }
 
 h2 {
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #005a9e;
     padding-bottom: 5px;
-    margin-bottom: 15px;
-    color: #007bff;
+    margin-bottom: 20px;
+    color: #005a9e;
+    font-size: 1.8em;
 }
 
 ul {
@@ -96,25 +61,47 @@ ul li {
 }
 
 .job h3 {
-    color: #0056b3;
+    color: #003366; /* Very dark blue */
+    font-size: 1.5em;
 }
 
 .job p {
     margin-bottom: 10px;
 }
 
+/* Footer styling */
+footer {
+    background: #005a9e;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
 /* Responsive design */
-@media (max-width: 800px) {
-    .container {
-        flex-direction: column;
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
     }
 
-    .sidebar {
-        width: 100%;
-        margin-bottom: 20px;
+    header p {
+        font-size: 1em;
     }
 
-    .content {
-        margin-left: 0;
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 0.9em;
     }
 }
