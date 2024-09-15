@@ -12,10 +12,21 @@ body {
     line-height: 1.6;
 }
 
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
 /* Container for the layout */
 .container {
     display: flex;
-    flex-wrap: nowrap;
     margin: 20px;
 }
 
@@ -29,11 +40,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     position: sticky;
     top: 20px;
-}
-
-.sidebar h1 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
 }
 
 .sidebar p, .sidebar ul {
