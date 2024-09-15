@@ -142,13 +142,15 @@ footer {
     transform: translateY(-2px);
 }
 
-.certification-title {
-    font-size: 1.1em;
-    color: #333;
-}
-.education {
-    font-family: Arial, sans-serif;
-}
-.degree {
+.job-title {
     font-weight: bold;
+}
+.company-name {
+    font-style: italic;
+}
+.duration {
+    color: gray;
+}
+.responsibilities {
+    margin-top: 10px;
 }
