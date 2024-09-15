@@ -146,3 +146,9 @@ footer {
     font-size: 1.1em;
     color: #333;
 }
+.education {
+    font-family: Arial, sans-serif;
+}
+.degree {
+    font-weight: bold;
+}
