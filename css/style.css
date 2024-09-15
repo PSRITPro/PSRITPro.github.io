@@ -1,50 +1,74 @@
-/* General resets and body styling */
+/* Reset some default styles */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
 
+/* Basic styling for the body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f4f4f9;
     line-height: 1.6;
 }
 
-/* Header styling */
-header {
-    background: #005a9e; /* Dark blue */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 4px solid #004080; /* Darker blue */
+/* Container for the layout */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
 }
 
-header h1 {
-    font-size: 2.5em;
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 20px;
+}
+
+.sidebar h1 {
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.2em;
+.sidebar p, .sidebar ul {
+    font-size: 1em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+/* Main content styling */
+.content {
+    flex: 1;
+    margin-left: 20px;
 }
 
 /* Section styling */
 section {
-    background: #ffffff;
-    margin: 20px auto;
+    background: #fff;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 900px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h2 {
-    border-bottom: 2px solid #005a9e;
+    border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
-    margin-bottom: 20px;
-    color: #005a9e;
-    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007bff;
 }
 
 ul {
@@ -61,47 +85,25 @@ ul li {
 }
 
 .job h3 {
-    color: #003366; /* Very dark blue */
-    font-size: 1.5em;
+    color: #0056b3;
 }
 
 .job p {
     margin-bottom: 10px;
 }
 
-/* Footer styling */
-footer {
-    background: #005a9e;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 20px;
-}
-
 /* Responsive design */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2em;
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
     }
 
-    header p {
-        font-size: 1em;
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    ul {
-        padding-left: 15px;
-    }
-
-    footer {
-        padding: 10px;
-        font-size: 0.9em;
+    .content {
+        margin-left: 0;
     }
 }
