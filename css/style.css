@@ -180,7 +180,3 @@ table.project-details th, table.project-details td {
     font-style: italic;
     color: #007BFF; /* A blue color to highlight the current status */
 }
-
-ul li.bold {
-    font-weight:normal;
-}
