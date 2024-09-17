@@ -154,3 +154,33 @@ footer {
 .responsibilities {
     margin-top: 10px;
 }
+table.project-details {
+    border-collapse: collapse; /* Merge adjacent borders into a single border */
+    width: 100%; /* Optional: Adjust the table width if needed */
+}
+
+table.project-details th, table.project-details td {
+    padding: 5px;
+    border: 1px solid rgb(165, 164, 164); /* Ensure border color is specified */
+    text-align: left;
+    vertical-align: top; /* Adjusted from text-top to top for consistency */
+}
+
+
+.company-details {
+    margin-bottom: 20px;
+}
+.company-name {
+    font-weight: bold;
+}
+.duration {
+    color: #777;
+}
+.current {
+    font-style: italic;
+    color: #007BFF; /* A blue color to highlight the current status */
+}
+
+ul li.bold {
+    font-weight:normal;
+}
