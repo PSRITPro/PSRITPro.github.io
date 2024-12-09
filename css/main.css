@@ -1,0 +1,31 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    #header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #header nav ul li a {
+        font-size: 16px;
+    }
+}

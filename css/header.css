@@ -1,0 +1,93 @@
+#header {
+    background-color: #333;
+    display: flex;  /* Use Flexbox to arrange the children in a row */
+    justify-content: space-between; /* Distribute space between left and right sections */
+    align-items: center;  /* Vertically align the content in the center */
+    padding: 5px; /* Optional, adds padding around the header */
+    width: 100%;  /* Ensure header takes the full width of the screen */
+    
+}
+
+#name {
+    margin: 0;
+    font-size: 36px;
+    text-align: left;
+}
+
+#designation {
+    margin: 0;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.567);
+}
+
+#top-links ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align the navigation links in a row */
+}
+
+#top-links ul li {
+    margin-right: 20px; /* Space between navigation items */
+}
+
+#top-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#top-links ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+    #header {
+        flex-direction: column; /* Stack the header sections vertically */
+        align-items: flex-start; /* Align the items to the left */
+    }
+
+    #left {
+        width: 100%; /* Ensure left section takes full width */
+        text-align: center; /* Center-align the text */
+        margin-bottom: 20px; /* Space between name and designation and links */
+    }
+
+    #top-links {
+        width: 100%; /* Make top-links section take full width */
+        display: flex;
+        flex-direction: column; /* Stack the links vertically on mobile */
+        align-items: center; /* Center the links */
+    }
+
+    #nav-links {
+        display: none;  /* Hide navigation links by default */
+        width: 100%; /* Make the links take full width */
+        flex-direction: column;  /* Stack the links vertically */
+        background-color: #fff; /* Optional: background for dropdown */
+        position: absolute; /* Position the menu */
+        top: 100px;  /* Adjust position below the header */
+        left: 0;
+        border-top: 1px solid #ddd; /* Optional: add border for dropdown */
+    }
+
+    #nav-links li {
+        margin: 10px 0; /* Vertical spacing between navigation items */
+    }
+
+    #menu-toggle {
+        display: block; /* Show the hamburger icon */
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        margin: 10px 0; /* Optional: spacing around the hamburger icon */
+    }
+
+    #nav-links.show {
+        display: flex;  /* Show navigation links when toggled */
+    }
+}
+
+
