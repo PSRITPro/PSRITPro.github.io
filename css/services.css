@@ -311,7 +311,7 @@
     background-size: cover;
     background-position: center;
     padding-block: 100px var(--section-padding);
-    min-height: 100vh;
+    min-height: 80vh;
     display: grid;
     place-items: center;
   }
@@ -774,7 +774,7 @@
        * typography
        */
   
-      --fs-1: 6.4rem;
+      --fs-1: 5.6rem;
       --fs-2: 3.5rem;
       --fs-3: 3.6rem;
   
@@ -782,7 +782,7 @@
        * spacing
        */
   
-      --section-padding: 80px;
+      --section-padding: 20px;
   
     }
   
@@ -1056,3 +1056,40 @@
     .footer-list { margin-inline: 0; }
   
   }
+
+  .view-more-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: var(--orange-soda); /* Adjust the color to match your design */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: auto; 
+  
+}
+
+
+
+.view-more-link:hover {
+  background-color: var(--orange-soda); /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+  .view-more-link {
+    width: 100%; /* Makes the button full width on smaller screens */
+    padding: 12px; /* Adds some extra padding for better touch targets */
+    font-size: 18px; /* Increases font size for readability */
+    text-align: center;    
+  }
+}
+
+@media (max-width: 480px) {
+  .view-more-link {
+    font-size: 16px; /* Adjusts font size further on very small screens */
+    padding: 15px; /* Slightly larger padding for small devices */
+  }
+}
