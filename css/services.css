@@ -931,6 +931,9 @@
     }
   
   .roles{color: rgb(177, 189, 214);}
+  li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+}
   
     /**
      * ABOUT
