@@ -930,7 +930,7 @@
       100% { transform: rotate(1turn); }
     }
   
-  
+  .roles{color: rgb(177, 189, 214);}
   
     /**
      * ABOUT
@@ -1071,6 +1071,7 @@
   width: auto; 
   
 }
+
 
 
 
