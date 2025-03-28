@@ -311,7 +311,7 @@
     background-size: cover;
     background-position: center;
     padding-block: 100px var(--section-padding);
-    min-height: 80vh;
+    min-height: 50vh;
     display: grid;
     place-items: center;
   }
@@ -933,7 +933,7 @@
   .roles{color: rgb(177, 189, 214);}
   li {
     margin-bottom: 10px; /* Adds spacing between list items */
-}
+  }
   
     /**
      * ABOUT
